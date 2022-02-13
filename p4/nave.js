@@ -21,16 +21,6 @@ var fundo = new function(){
     this.length=10;
 }
 
-var nave =  new function(){
-    this.x=88;
-    this.y=220;
-    this.w=85;
-    this.h=50;
-    this.frame=10;
-    this.img = new Image();
-    this.img.src = './aviao.png';  
-}
-
 function limpa(){
     ctx.fillStyle = '#d0e7f9';  
     ctx.rect(0, 0,  ctx.width,  ctx.height);    
@@ -39,7 +29,6 @@ function limpa(){
 
 function desenha(){
     desenhaFundo();
-    ctx.drawImage(nave.img, 200, 240);  
 }
 
 function desenhaFundo(){
