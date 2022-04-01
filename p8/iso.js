@@ -43,8 +43,7 @@ class Skeleton extends Phaser.GameObjects.Image {
         this.motion = motion;
         this.anim = anims[motion];
         this.direction = directions[direction];
-        //this.speed = 0.15;
-        this.speed = 2;
+        this.speed = 0.15;
         this.f = this.anim.startFrame;
 
         this.depth = y + 64;
